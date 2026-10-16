@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720" width="1440" height="720" role="img" aria-labelledby="t d">
+  <title id="t">tesseract</title>
+  <desc id="d">Iris, winged goddess of the rainbow, stands inside a glowing tesseract and holds a prism that splits an issue screenshot into layered DOM, CSS, and pixel planes. Three attendants surround her: a smith shaping a task at an anvil, a scribe keeping a record of past tasks, and an examiner testing a sealed task under a lens.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1026"/>
+      <stop offset="0.55" stop-color="#131a33"/>
+      <stop offset="1" stop-color="#1d1440"/>
+    </linearGradient>
+    <radialGradient id="keylight" cx="0.78" cy="0.12" r="0.75">
+      <stop offset="0" stop-color="#fff4d6" stop-opacity="0.55"/>
+      <stop offset="0.35" stop-color="#845EF7" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#0b1026" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e8ecff" stop-opacity="0.9"/>
+      <stop offset="0.4" stop-color="#b9a6ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#845EF7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="robe" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#f3eeff"/>
+      <stop offset="0.45" stop-color="#b9a6ff"/>
+      <stop offset="1" stop-color="#4b3596"/>
+    </linearGradient>
+    <linearGradient id="wingL" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8ecff" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#845EF7" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="wingR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8ecff" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#845EF7" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff4d6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff4d6" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6dcc7"/>
+      <stop offset="1" stop-color="#b98a72"/>
+    </linearGradient>
+    <linearGradient id="pane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2450" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#0f1530" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="paint" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.03" numOctaves="3" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+    <linearGradient id="shade" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#fff4d6" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0b1026" stop-opacity="0.45"/>
+    </linearGradient>
+    <radialGradient id="ground" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#05070f" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#05070f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- backdrop: night sky, directional key light from the upper right -->
+  <rect width="1440" height="720" fill="url(#sky)"/>
+  <rect width="1440" height="720" fill="url(#keylight)"/>
+  <g opacity="0.55" fill="#e8ecff">
+    <circle cx="120" cy="80" r="1.4"/><circle cx="260" cy="150" r="1"/><circle cx="410" cy="60" r="1.2"/>
+    <circle cx="1010" cy="70" r="1.1"/><circle cx="1180" cy="190" r="1.3"/><circle cx="1330" cy="110" r="1"/>
+    <circle cx="560" cy="40" r="0.9"/><circle cx="1260" cy="40" r="1.2"/><circle cx="70" cy="300" r="1"/>
+  </g>
+  <!-- painterly cloud washes -->
+  <g filter="url(#paint)" opacity="0.5">
+    <ellipse cx="300" cy="610" rx="420" ry="90" fill="#2a1f5c"/>
+    <ellipse cx="1160" cy="620" rx="460" ry="100" fill="#1f2a5c"/>
+    <ellipse cx="720" cy="690" rx="700" ry="70" fill="#120d2b"/>
+  </g>
+
+  <g>
+    <ellipse cx="700" cy="566" rx="110" ry="14" fill="url(#ground)"/>
+    <ellipse cx="210" cy="566" rx="90" ry="11" fill="url(#ground)"/>
+    <ellipse cx="70" cy="566" rx="60" ry="9" fill="url(#ground)"/>
+    <ellipse cx="1220" cy="566" rx="100" ry="11" fill="url(#ground)"/>
+  </g>
+  <!-- the tesseract: outer and inner cubes joined at every vertex -->
+  <g stroke="#22d3ee" stroke-width="2" fill="none" filter="url(#glow)" opacity="0.85" transform="translate(0,30)">
+    <polygon points="520,130 920,130 920,530 520,530" stroke-opacity="0.55"/>
+    <polygon points="600,90 1000,90 1000,490 600,490" stroke-opacity="0.35"/>
+    <polygon points="640,240 800,240 800,400 640,400" stroke="#b9a6ff"/>
+    <polygon points="670,215 830,215 830,375 670,375" stroke="#b9a6ff" stroke-opacity="0.7"/>
+    <line x1="520" y1="130" x2="600" y2="90" stroke-opacity="0.4"/>
+    <line x1="920" y1="130" x2="1000" y2="90" stroke-opacity="0.4"/>
+    <line x1="920" y1="530" x2="1000" y2="490" stroke-opacity="0.4"/>
+    <line x1="520" y1="530" x2="600" y2="490" stroke-opacity="0.4"/>
+    <line x1="520" y1="130" x2="640" y2="240" stroke-opacity="0.5"/>
+    <line x1="920" y1="130" x2="800" y2="240" stroke-opacity="0.5"/>
+    <line x1="920" y1="530" x2="800" y2="400" stroke-opacity="0.5"/>
+    <line x1="520" y1="530" x2="640" y2="400" stroke-opacity="0.5"/>
+    <line x1="1000" y1="90" x2="830" y2="215" stroke-opacity="0.3"/>
+    <line x1="640" y1="240" x2="670" y2="215" stroke="#b9a6ff"/>
+    <line x1="800" y1="240" x2="830" y2="215" stroke="#b9a6ff"/>
+    <line x1="800" y1="400" x2="830" y2="375" stroke="#b9a6ff"/>
+    <line x1="640" y1="400" x2="670" y2="375" stroke="#b9a6ff" stroke-opacity="0.6"/>
+    <line x1="600" y1="90" x2="670" y2="215" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- halo behind Iris -->
+  <circle cx="720" cy="250" r="190" fill="url(#halo)"/>
+
+  <!-- wings, lit from the upper right -->
+  <g filter="url(#paint)">
+    <path d="M700,250 C600,170 470,150 380,210 C450,220 500,240 540,270 C470,265 420,285 380,320 C470,315 540,320 600,330 C560,350 520,385 500,430 C580,395 650,350 700,300 Z" fill="url(#wingL)"/>
+    <path d="M740,250 C840,165 980,140 1080,200 C1005,215 950,238 905,268 C985,262 1040,285 1085,322 C990,316 915,322 850,332 C895,352 935,390 958,435 C870,397 795,350 740,300 Z" fill="url(#wingR)"/>
+  </g>
+  <g stroke="#e8ecff" stroke-opacity="0.35" stroke-width="1.2" fill="none">
+    <path d="M690,260 C620,220 520,215 430,235"/><path d="M690,280 C620,270 540,280 460,305"/>
+    <path d="M750,260 C820,220 925,212 1025,232"/><path d="M750,280 C825,270 905,280 990,306"/>
+  </g>
+
+  <!-- Iris: robed figure, face turned toward the light -->
+  <g>
+    <path d="M720,300 C690,330 668,420 650,560 L792,560 C772,420 752,330 720,300 Z" fill="url(#robe)" filter="url(#paint)"/>
+    <path d="M720,300 C690,330 668,420 650,560 L792,560 C772,420 752,330 720,300 Z" fill="url(#shade)"/>
+    <path d="M700,330 C712,380 716,470 712,560" stroke="#4b3596" stroke-opacity="0.45" stroke-width="3" fill="none"/>
+    <path d="M740,330 C736,390 744,470 756,560" stroke="#f3eeff" stroke-opacity="0.5" stroke-width="2" fill="none"/>
+    <path d="M713,292 L713,312 C718,316 726,316 731,312 L731,292 Z" fill="url(#skin)"/>
+    <ellipse cx="722" cy="268" rx="24" ry="30" fill="url(#skin)"/>
+    <g fill="#2a1f5c" fill-opacity="0.8"><ellipse cx="714" cy="268" rx="3" ry="2"/><ellipse cx="731" cy="268" rx="3" ry="2"/></g>
+    <path d="M712,260 q3,-3 6,0 M727,260 q3,-3 6,0" stroke="#4b3596" stroke-width="1.5" fill="none"/>
+    <path d="M722,272 q2,6 -1,9" stroke="#b98a72" stroke-width="1.5" fill="none"/>
+    <path d="M716,286 q6,3 12,0" stroke="#a0525e" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M746,250 C752,262 750,282 740,294" stroke="#fff4d6" stroke-opacity="0.6" stroke-width="2" fill="none"/>
+    <path d="M697,262 C700,228 748,226 750,262 C746,246 735,240 722,240 C708,240 700,248 697,262 Z" fill="#2a1f5c"/>
+    <path d="M700,250 C660,262 640,300 600,318 C632,322 660,310 676,296 C664,320 646,340 620,356 C660,352 690,330 704,300 Z" fill="#2a1f5c"/>
+    <path d="M700,256 C668,272 650,296 618,314" stroke="#845EF7" stroke-opacity="0.5" stroke-width="1.5" fill="none"/>
+    <path d="M746,258 C756,282 752,306 744,322 C746,304 744,284 740,270 Z" fill="#2a1f5c"/>
+    <ellipse cx="723" cy="226" rx="30" ry="7" stroke="#fff4d6" stroke-width="3" fill="none" filter="url(#glow)"/>
+    <!-- raised arm holding the prism toward the screenshot -->
+    <path d="M708,318 C684,352 672,400 676,444 L698,446 C696,404 704,362 722,330 Z" fill="#4b3596"/>
+    <path d="M700,330 C686,368 680,404 684,436" stroke="#e8ecff" stroke-opacity="0.35" stroke-width="2" fill="none"/>
+    <circle cx="691" cy="446" r="8" fill="url(#skin)"/>
+    <path d="M740,318 C770,312 800,302 824,294" stroke="#4b3596" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <path d="M742,312 C772,306 800,298 822,290" stroke="#fff4d6" stroke-opacity="0.45" stroke-width="2" fill="none"/>
+    <circle cx="829" cy="300" r="8" fill="url(#skin)"/>
+  </g>
+
+  <!-- prism and beam: the screenshot enters as white light -->
+  <polygon points="862,250 897,308 827,308" fill="#e8ecff" fill-opacity="0.35" stroke="#fff4d6" stroke-width="2" filter="url(#glow)"/>
+  <!-- issue screenshot pane, upper left of the beam -->
+  <g transform="translate(1110,150) rotate(-6)">
+    <rect width="190" height="120" rx="8" fill="url(#pane)" stroke="#e8ecff" stroke-opacity="0.6"/>
+    <rect width="190" height="18" rx="8" fill="#22d3ee" fill-opacity="0.25"/>
+    <circle cx="12" cy="9" r="3" fill="#e8ecff"/><circle cx="24" cy="9" r="3" fill="#e8ecff" fill-opacity="0.6"/>
+    <rect x="16" y="32" width="90" height="10" rx="2" fill="#e8ecff" fill-opacity="0.55"/>
+    <rect x="16" y="50" width="150" height="8" rx="2" fill="#e8ecff" fill-opacity="0.3"/>
+    <rect x="40" y="70" width="120" height="34" rx="4" fill="#845EF7" fill-opacity="0.5" transform="rotate(4 100 87)"/>
+    <circle cx="160" cy="88" r="16" fill="none" stroke="#ff8fa3" stroke-width="2.5"/>
+  </g>
+  <path d="M1110,215 L880,268" stroke="url(#beam)" stroke-width="4" stroke-dasharray="2 0" filter="url(#glow)"/>
+  <!-- split into three layered planes: DOM, CSS, pixels -->
+  <g filter="url(#glow)">
+    <path d="M872,310 L860,600" stroke="#ff8fa3" stroke-width="4" stroke-opacity="0.85"/>
+    <path d="M880,310 L1035,600" stroke="#fff4d6" stroke-width="4" stroke-opacity="0.85"/>
+    <path d="M888,308 L1205,600" stroke="#22d3ee" stroke-width="4" stroke-opacity="0.85"/>
+  </g>
+  <g font-family="monospace" font-size="15" fill="#e8ecff">
+    <g transform="translate(790,600) skewX(-12)">
+      <rect width="150" height="62" rx="6" fill="#ff8fa3" fill-opacity="0.16" stroke="#ff8fa3" stroke-opacity="0.7"/>
+      <text x="14" y="26">&lt;div&gt;</text><text x="30" y="46" fill-opacity="0.7">&lt;svg/&gt;</text>
+    </g>
+    <g transform="translate(965,600) skewX(-12)">
+      <rect width="150" height="62" rx="6" fill="#fff4d6" fill-opacity="0.14" stroke="#fff4d6" stroke-opacity="0.7"/>
+      <text x="14" y="26">.layer {</text><text x="30" y="46" fill-opacity="0.7">z-index }</text>
+    </g>
+    <g transform="translate(1140,600) skewX(-12)">
+      <rect width="150" height="62" rx="6" fill="#22d3ee" fill-opacity="0.14" stroke="#22d3ee" stroke-opacity="0.7"/>
+      <g fill="#22d3ee" fill-opacity="0.8">
+        <rect x="16" y="14" width="10" height="10"/><rect x="30" y="14" width="10" height="10" fill-opacity="0.4"/>
+        <rect x="44" y="14" width="10" height="10"/><rect x="16" y="28" width="10" height="10" fill-opacity="0.4"/>
+        <rect x="30" y="28" width="10" height="10"/><rect x="44" y="28" width="10" height="10" fill-opacity="0.6"/>
+      </g>
+      <text x="68" y="34">px</text>
+    </g>
+  </g>
+
+  <!-- attendant 1, left: the smith shapes a new task at an anvil -->
+  <g fill="none" stroke="#b9a6ff" stroke-opacity="0.75" stroke-width="2"><path d="M232,430 C262,450 276,500 272,560"/><path d="M244,400 a20,20 0 0 1 8,15"/></g>
+  <g filter="url(#paint)">
+    <path d="M190,560 C185,500 200,450 232,430 C262,450 276,500 272,560 Z" fill="#3b2f74"/>
+    <path d="M190,560 C185,500 200,450 232,430 C262,450 276,500 272,560 Z" fill="url(#shade)"/>
+    <circle cx="232" cy="415" r="20" fill="#6a56c4"/>
+    <path d="M150,560 L330,560 L310,530 L170,530 Z" fill="#1d1440" stroke="#845EF7" stroke-opacity="0.5"/>
+    <rect x="200" y="505" width="80" height="26" rx="4" fill="#4b3596"/>
+    <path d="M262,450 C300,430 318,420 330,400" stroke="#3b2f74" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <rect x="318" y="384" width="34" height="16" rx="3" fill="#b9a6ff" transform="rotate(-25 335 392)"/>
+  </g>
+  <g filter="url(#glow)"><rect x="216" y="492" width="44" height="14" rx="3" fill="#fff4d6" fill-opacity="0.85"/></g>
+
+  <!-- attendant 2, far left: the scribe keeps the record of past tasks -->
+  <g transform="translate(-30,0)">
+  <g fill="none" stroke="#22d3ee" stroke-opacity="0.7" stroke-width="2"><path d="M96,455 C120,470 132,510 130,560"/><path d="M106,426 a17,17 0 0 1 7,14"/></g>
+  <g filter="url(#paint)" opacity="0.92">
+    <path d="M60,560 C58,510 70,470 96,455 C120,470 132,510 130,560 Z" fill="#3b2f74"/>
+    <circle cx="96" cy="440" r="17" fill="#4b6fb0"/>
+    <path d="M110,500 C150,488 170,505 182,520 L120,540 Z" fill="#e8ecff" fill-opacity="0.75"/>
+    <g stroke="#131a33" stroke-opacity="0.6" stroke-width="1.5"><line x1="128" y1="510" x2="162" y2="503"/><line x1="130" y1="518" x2="168" y2="511"/><line x1="133" y1="526" x2="170" y2="520"/></g>
+  </g>
+  </g>
+
+  <!-- attendant 3, right: the examiner tests a sealed task under a lens -->
+  <g fill="none" stroke="#fff4d6" stroke-opacity="0.7" stroke-width="2"><path d="M1212,432 C1242,452 1256,500 1252,560"/><path d="M1224,402 a20,20 0 0 1 8,15"/></g>
+  <g filter="url(#paint)">
+    <path d="M1170,560 C1165,500 1180,452 1212,432 C1242,452 1256,500 1252,560 Z" fill="#2f3f80"/>
+    <path d="M1170,560 C1165,500 1180,452 1212,432 C1242,452 1256,500 1252,560 Z" fill="url(#shade)"/>
+    <circle cx="1212" cy="417" r="20" fill="#5a78c8"/>
+    <rect x="1270" y="500" width="70" height="58" rx="6" fill="#2a1f5c" stroke="#22d3ee" stroke-opacity="0.6"/>
+    <path d="M1270,520 L1340,520" stroke="#22d3ee" stroke-opacity="0.6"/>
+    <path d="M1240,455 C1262,470 1275,480 1290,486" stroke="#1f2a5c" stroke-width="10" stroke-linecap="round" fill="none"/>
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="1300" cy="478" r="22" fill="#22d3ee" fill-opacity="0.18" stroke="#e8ecff" stroke-width="3"/>
+    <path d="M1290,478 l7,8 l14,-16" stroke="#22d3ee" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- title and tagline -->
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#e8ecff">
+    <text x="720" y="58" text-anchor="middle" font-size="44" letter-spacing="10" filter="url(#glow)">TESSERACT</text>
+    <text x="720" y="88" text-anchor="middle" font-size="17" fill-opacity="0.85" font-style="italic">Hard, verified terminal tasks where agents fix visual front-end bugs from screenshots.</text>
+  </g>
+
+  <rect width="1440" height="720" filter="url(#grain)"/>
+</svg>
